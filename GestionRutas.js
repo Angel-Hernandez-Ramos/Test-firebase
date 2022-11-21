@@ -1,7 +1,7 @@
 
 function CreandoTablaNuevaRuta(idUser){
     $.ajax({
-        url: 'Control.php',
+        url: 'assets/data/Controller/assets/data/Controller/Control.php',
         type: 'POST',
         data: {
             action: 'consultaRutasUsuario',
@@ -65,7 +65,7 @@ function EditarRuta(idRuta,nombre,descripcion){
 
 function llenadoTablaEditar(idRuta){
     $.ajax({
-        url: 'Control.php',
+        url: 'assets/data/Controller/Control.php',
         type: 'POST',
         data: {
             action: 'consultaPuntos',
@@ -101,7 +101,7 @@ function EditarPunto(idPunto){
     $("#puntoEditar").val(idPunto);
     
     $.ajax({
-        url: 'Control.php',
+        url: 'assets/data/Controller/Control.php',
         type: 'POST',
         data: {
             action: 'ConsultaInfoPunto',
@@ -127,7 +127,7 @@ $("#formulario-puntoEditar").on('submit',function(e){
     fData.append('action', 'ActualizarPunto');
     console.log(fData);
     $.ajax({
-        url: 'Control.php',
+        url: 'assets/data/Controller/Control.php',
         type: 'POST',
         data: fData,
         contentType: false,
@@ -219,7 +219,7 @@ $("#Formulario-logIn").on('submit',function(e){
     fData.append('action', 'InicioSesion');
     console.log(fData);
     $.ajax({
-        url: 'Control.php',
+        url: 'assets/data/Controller/Control.php',
         type: 'POST',
         data: fData,
         contentType: false,
@@ -260,7 +260,7 @@ $("#formulario-rutaEditar").on('submit',function(e){
     fData.append('action', 'ActualizarRuta');
     console.log(fData);
     $.ajax({
-        url: 'Control.php',
+        url: 'assets/data/Controller/Control.php',
         type: 'POST',
         data: fData,
         contentType: false,
@@ -346,7 +346,7 @@ $("#formulario-rutas").on('submit',function(e){
     fData.append('action', 'ImprmirRutas');
     console.log(fData);
     $.ajax({
-        url: 'Control.php',
+        url: 'assets/data/Controller/Control.php',
         type: 'POST',
         data: fData,
         contentType: false,
@@ -407,7 +407,7 @@ function Comentar(idRuta){
 
 function CargarComentariosR(idRuta){
     $.ajax({
-        url: 'Control.php',
+        url: 'assets/data/Controller/Control.php',
         type: 'POST',
         data: {
             action: 'Comentarios',
@@ -466,7 +466,7 @@ function ComentariosPunto(idPunto){
 
 function CargarComentariosP(idPunto){
     $.ajax({
-        url: 'Control.php',
+        url: 'assets/data/Controller/Control.php',
         type: 'POST',
         data: {
             action: 'ComentariosPunto',
@@ -520,7 +520,7 @@ function VerPuntosId(idRuta){
     });
 
     $.ajax({
-        url: 'Control.php',
+        url: 'assets/data/Controller/Control.php',
         type: 'POST',
         data: {
             action: 'consultaPuntos',
@@ -585,7 +585,7 @@ $("#formulario-Eliminar-rutas").on('submit',function(e){
 
 function Cargar_Tabla_Eliminar(fData){
     $.ajax({
-        url: 'Control.php',
+        url: 'assets/data/Controller/Control.php',
         type: 'POST',
         data: fData,
         contentType: false,
@@ -614,7 +614,7 @@ function Cargar_Tabla_Eliminar(fData){
 
 function EliminarRuta(idRuta){
     $.ajax({
-        url: 'Control.php',
+        url: 'assets/data/Controller/Control.php',
         type: 'POST',
         data: {
             action: 'EliminarRuta',
@@ -673,7 +673,7 @@ function EliminarRuta(idRuta){
 
 function EliminarPunto(idPunto){
     $.ajax({
-        url: 'Control.php',
+        url: 'assets/data/Controller/Control.php',
         type: 'POST',
         data: {
             action: 'EliminarPunto',
@@ -737,7 +737,7 @@ $("#formulario-usuario").on('submit',function(e){
     fData.append('action', 'RegistrarUsuario');
     console.log(fData);
     $.ajax({
-        url: 'Control.php',
+        url: 'assets/data/Controller/Control.php',
         type: 'POST',
         data: fData,
         contentType: false,
@@ -800,7 +800,7 @@ $("#formulario-punto-nuevo").on('submit',function(e){
     fData.append('action', 'InsertaPunto');
     console.log(fData);
     $.ajax({
-        url: 'Control.php',
+        url: 'assets/data/Controller/Control.php',
         type: 'POST',
         data: fData,
         contentType: false,
@@ -860,7 +860,7 @@ $("#formulario-rutaNueva").on('submit',function(e){
     fData.append('action', 'InsertaNuevaRuta');
     console.log(fData);
     $.ajax({
-        url: 'Control.php',
+        url: 'assets/data/Controller/Control.php',
         type: 'POST',
         data: fData,
         contentType: false,
@@ -921,7 +921,7 @@ $("#formularioComentarioRuta").on('submit',function(e){
     fData.append('action', 'InsertaNuevoComentarioRuta');
     console.log(fData);
     $.ajax({
-        url: 'Control.php',
+        url: 'assets/data/Controller/Control.php',
         type: 'POST',
         data: fData,
         contentType: false,
@@ -980,7 +980,7 @@ $("#formularioComentarioPunto").on('submit',function(e){
     fData.append('action', 'InsertaNuevoComentarioPunto');
     console.log(fData);
     $.ajax({
-        url: 'Control.php',
+        url: 'assets/data/Controller/Control.php',
         type: 'POST',
         data: fData,
         contentType: false,

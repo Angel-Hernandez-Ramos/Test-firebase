@@ -1,5 +1,5 @@
 <?php
-	require_once 'Model.php';
+	require_once '../Model/Model.php';
     //require_once '../../Model/controlescolar/materiasModel.php';
     //$matsM = new Materias();
     /*if(!isset($_SESSION['usuario'])){
